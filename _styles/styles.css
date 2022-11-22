@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #fff;
+}
+
+.pesquisa {
+    width: 200px;
+    height: 100vh;
+    background-color:#2e2d2d;
+    box-shadow:  0 0 5px rgba(0, 0, 0, .5);
+    padding: 10px;
+}
+
+.pesquisa .logo {
+    border-bottom: solid .1rem #4e4a4a;
+    color:#4e4a4a;
+    padding-bottom: 10px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.pesquisa .logo span {
+    font-size: 15px;
+}
+
+.pesquisa .logo button {
+    background-color: #e9ece9;
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+    border: none;
+    margin-right: .6rem;
+}
+
+.pesquisa .logo i {
+    margin-left: .1rem;
+}
+
+.pesquisa i {
+    margin-right: .3rem;
+}
+
+.pesquisa .barrapesquisa {
+    height: 180px;
+}
+
+.pesquisa .barrapesquisa button {
+    color:#cac4c4;
+    text-align: left;
+    background-color: #2e2d2d;
+    height: 30px;
+    margin-top:10px;
+    border: none;
+    border-radius: 5px;
+    width: 180px;
+    cursor: pointer;
+    transition: .5s;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.pesquisa .barrapesquisa button:hover {
+    background-color: #4e4a4a;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    transition: .5s;
+}
+
+.sair {
+    margin-top: 190%;
+    border-top: solid .1rem #4e4a4a;
+}
+
+.sair button {
+    color:#cac4c4;
+    text-align: left;
+    background-color: #2e2d2d;
+    height: 30px;
+    margin-top:10px;
+    border: none;
+    border-radius: 5px;
+    width: 180px;
+    cursor: pointer;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.sair button:hover {
+    background-color: #4e4a4a;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    transition: .5s;
+}
+
+
+.container {
+    width: calc(100vw - 200px);
+    padding: 10px;
+    display:flex;
+}
+
+.detalhes {
+    width: 300px;
+    height: 100%;
+    padding: 10px;
+}
+
+.show {
+    display:block;
+}
+
+.container .conteudo h2 {
+    font-size: 13px;
+}
+
+.detalhes .receita {
+    background-color: #f9faf9;
+    box-shadow:  0 0 5px rgba(0, 0, 0, .5);
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+span {
+    font-size: 13px;
+    color: #4e4a4a;
+}
+
+.container p {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.detalhes .receita .btndt {
+    color:#f9faf9;
+    text-align: center;
+    background-color: #7a137a;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    width: 180px;
+    cursor: pointer;
+    transition: .5s;
+    padding: 5px 10px;
+    outline: none;
+    margin-top: 20%;
+}
+
+.receita .btndt:hover {
+    color:#e9ece9;
+    text-align: center;
+    background-color:  #8f2086;
+    transform: translate(.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+}
+
+.hide {
+    display:none;
+}
+
+.detalhes .corpodash {
+    background-color: rgba(0, 0, 0, .9);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.detalhes .corpodash .dashcont {
+    background-color: #cac4c4;
+    width: 400px;
+    height: calc(100vh - 100px);
+    padding: 20px;
+    border-radius: 5px;
+    margin: 50px auto;
+}
+
+.detalhes .corpodash .dashcont p{
+    font-size: 12pt;
+}
+
+.container .detalhes .corpodash .dashcont #fechar {
+    color: #292626;
+    border: .1rem solid #292626;
+    background-color: #cac4c4;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top:10px;
+    float: right;
+}
+
+.detalhes .movimento {
+    background-color: #f9faf9;
+    box-shadow:  0 0 5px rgba(0, 0, 0, .5);
+    height: calc(100% - 160px);
+    width: 200px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.alinrecente {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detalhes .alinrecente .recentes h2 {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.dt span {
+    color:#7a137a;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.lista {
+    margin-top: 10px;
+}
+
+.lista ul li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    font-weight: 600;
+    list-style: none;
+}
+
+.lista ul li {
+    text-align: center;
+}
+
+.entradadevalores {
+    color:#90e9ae;
+}
+
+.vermelho i {
+    color:#b30f0f;
+    margin-right: 2px;
+    font-size: 19px;
+}
+
+.verde i {
+    color:#09af40;
+    margin-right: 2px;
+    font-size: 19px;
+}
+
+.conteudo {
+    width: 100%;
+}
+
+.conteudo .orcamento .lucro {
+    display: flex;
+}
+
+h2 {
+    font-size: 10px;
+    color:#4e4a4a;
+    margin-bottom: 10px;
+}
+
+.orcamento span {
+    font-size: 10px;
+    color:#4e4a4a;
+}
+
+.conteudo .orcamento .lucro .entradaderecurso {
+    background-color: #f9faf9;
+    box-shadow:  0 0 5px rgba(0, 0, 0, .5);
+    height: 120px;
+    width: 35%;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.conteudo .orcamento .lucro .valorsaida {
+    background-color: #f9faf9;
+    box-shadow:  0 0 5px rgba(0, 0, 0, .5);
+    height: 120px;
+    width: 35%;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.conteudo .orcamento .lucro .mesanterior {
+    background-color: #f9faf9;
+    box-shadow:  0 0 5px rgba(0, 0, 0, .5);
+    height: 120px;
+    width: 35%;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.conteudo .orcamento .despesas {
+    display: flex;
+}
+
+.conteudo .orcamento .despesas .d-ammac {
+    background-color: #f9faf9;
+    box-shadow:  0 0 5px rgba(0, 0, 0, .5);
+    height: 120px;
+    width: 35%;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.conteudo .orcamento .despesas .d-mm {
+    background-color: #f9faf9;
+    box-shadow:  0 0 5px rgba(0, 0, 0, .5);
+    height: 120px;
+    width: 35%;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.conteudo .orcamento .despesas .d-merco {
+    background-color: #f9faf9;
+    box-shadow:  0 0 5px rgba(0, 0, 0, .5);
+    height: 120px;
+    width: 35%;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.balanco {
+    display: flex;
+    margin-top: 10px;
+}
+
+.conteudo .balanco .grafico {
+    background-color: #f9faf9;
+    box-shadow:  0 0 5px rgba(0, 0, 0, .5);
+    width: 60%;
+    height: calc(100vh - 300px);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.conteudo .balanco .colaboradores {
+    background-color: #f9faf9;
+    box-shadow:  0 0 5px rgba(0, 0, 0, .5);
+    width: 40%;
+    height: calc(100vh - 300px);
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.organizando {
+    display: flex;
+}
+
+.icon {
+    margin-left: 12rem;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.semconteudo {
+    text-align: center;
+    
+}
+
+.colaboradores .barralateral {
+    overflow-y: auto;
+    height: 90%;
+    display: none;
+}
+
+.alinhamento1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.conteudo .faltou {
+    border-radius: 50px;
+    height: 10px;
+    width: 10px;
+    background-color: #b30f0f;
+}
+
+.conteudo .presente {
+    border-radius: 50px;
+    height: 10px;
+    width: 10px;
+    background-color: #09af40;
+}
+
+.conteudo .ferias {
+    border-radius: 50px;
+    height: 10px;
+    width: 10px;
+    background-color:#d2691e;
+}
+
+.conteudo .balanco .colaboradores .alinhamento1 span{
+    font-size: 13px;
+}
+
+.conteudo .balanco .colaboradores .alinhamento1 p{
+    font-size: 13px;
+}
+
+.conteudo .balanco .colaboradores .alinhamento2 span{
+    font-size: 13px;
+}
+
+.conteudo .balanco .colaboradores .alinhamento2 p{
+    font-size: 13px;
+}
+
+.conteudo .balanco .colaboradores .alinhamento3 span{
+    font-size: 13px;
+}
+
+.conteudo .balanco .colaboradores .alinhamento3 p{
+    font-size: 13px;
+}
+
+.alinhamento2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid .1rem  #cac4c4;
+    padding: 3px;
+    margin-bottom: 5px;
+}
+
+.alinhamento3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid .1rem  #cac4c4;
+    padding: 3px;
+}
+
+p{
+    font-size: 13px;
+    color: #2e2d2d;
+}
+
+.nome1 {
+    display: flex;
+    flex-direction: center;
+}
+
+.nome2 {
+    display: flex;
+    flex-direction: center;
+}
+
+.nome3 {
+    display: flex;
+    flex-direction: center;
+}
+
+.conteudo .balanco .colaboradores span {
+    font-size: 13px;
+}
+
+.colaboradores button {
+    background-color: #817e7e;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    border: none;
+    margin-right: .4rem;
+}
+
+/*elha*/
+
+
+body .bg-dash {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(6px);
+    background: rgba(0, 0, 0, .5);
+}
+
+.bg-dash.active {
+    display: block;
+}
+
+.dash-popup {
+    background: #fff;
+    width: 40vw;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 100px auto;
+}
+
+.dash-popup header {
+    display: flex;
+    justify-content: space-between;
+}
+#sairdash {
+    cursor: pointer;
+}
+
+#sairdash:hover {
+    color:#ca0c0c;
+    font-size: 20px;
+}
+
+.nmcompleto {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    padding: 5px 0;
+}
+
+.dash-popup input {
+    outline: none;
+    padding: 3px;
+    border: solid .1rem #524d4d;
+    border-radius: 5px;
+}
+
+.tlf {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    padding: 5px 0;
+}
+
+.fnc {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    padding: 5px 0;
+}
+
+.btn-dash {
+    margin-top: 9px;
+    margin-bottom: 9px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+.btn-dash button {
+    padding: 0 15px;
+    border: solid .1rem #524d4d;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-dash button:nth-child(1) {
+    background-color: #df54549f;
+    border: none;
+    color:#ca0c0c;
+}
+
+.btn-dash button:nth-child(2) {
+    background-color: #69e42296;
+    color:#05ac05;
+    border: none;
+}

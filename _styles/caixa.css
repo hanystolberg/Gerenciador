@@ -1,0 +1,217 @@
+.containercaixa {
+    padding: 10px;
+    background-color: #cec8c8;
+    display: block;
+}
+
+.caixa h1 {
+    font-size: 19px;
+    margin-bottom: 10px;
+    font-weight:900;
+}
+
+.conteudocaixa {
+    background-color: #f5eded;
+    width: calc(100vw - 220px);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.filtro {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid .1rem #b8acac;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.filtro .inputdate {
+    padding-top: 25px;
+}
+
+.filtro input {
+    color:#5a129e;
+    border: solid .1rem #5a129e;
+    padding: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.registrarcaixa {
+    padding: 15px;
+}
+
+.registrarcaixa button {
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: none;
+    margin-top: 10px;
+    background-color: #7a137a;
+    cursor: pointer;
+    color:#cec8c8;
+}
+
+.registrar button:hover {
+    background-color:  #8f2086;
+    transform: translate(.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+}
+
+
+.conteudocaixa .registro1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteudocaixa .registro1 .org {
+    display: flex;
+}
+table {
+    width: 100%;
+    margin-top: 10px;
+}
+
+table thead th {
+    text-align: left;
+    font-size: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+table tbody td {
+    font-size: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.saida {
+    background-color: #df54549f;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    color:#ca0c0c
+}
+
+.entrada {
+    background-color: #69e42296;
+    color:#05ac05;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.funcionario {
+    background-color: #8f35e4a4;
+    color:#5a129e;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*elha*/
+
+
+.bg-popup {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(6px);
+    background: rgba(0, 0, 0, .5);
+}
+
+.bg-popup.active {
+    display: block;
+}
+
+.win-popup {
+    background: #fff;
+    width: 40vw;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 100px auto;
+}
+
+.win-popup header {
+    display: flex;
+    justify-content: space-between;
+}
+#sair {
+    cursor: pointer;
+}
+
+#sair:hover {
+    color:#ca0c0c;
+    font-size: 20px;
+}
+
+.dat {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    padding: 5px 0;
+}
+
+.win-popup input {
+    outline: none;
+    padding: 3px;
+    border: solid .1rem #524d4d;
+    border-radius: 5px;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    padding: 5px 0;
+}
+
+.valorc {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    padding: 5px 0;
+}
+
+.movc {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    padding: 5px 0;
+}
+
+
+.btn-group {
+    margin-top: 9px;
+    margin-bottom: 9px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+.btn-group button{
+    padding: 0 15px;
+    border: solid .1rem #524d4d;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-group button:nth-child(1) {
+    background-color: #df54549f;
+    border: none;
+    color:#ca0c0c;
+}
+
+.btn-group button:nth-child(2) {
+    background-color: #69e42296;
+    color:#05ac05;
+    border: none;
+}

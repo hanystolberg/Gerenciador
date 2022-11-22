@@ -1,0 +1,6 @@
+.containerhistorico {
+    background-color: #b8acac;
+    display: flex;
+    width: calc(100vw - 200px);
+    padding: 10px;
+}

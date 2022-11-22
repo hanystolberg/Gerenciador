@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../_styles/fornecedor.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/_styles/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="pesquisa">
+        <div class="logo">
+            <button></button>
+            <span>Nome do Usuario</span>
+        </div>
+        <div class="barrapesquisa">
+            <ul>
+                <li>
+                    <a href="../index.html">
+                        <button><i class='bx bxs-dashboard'></i>Dashboard</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="caixa.html">
+                        <button><i class='bx bx-exit bx-rotate-90'></i>Caixa</button>
+                    </a>
+                </li>
+                <li>
+                    <button><i class='bx bxs-user-account'></i>Fornecedor</button>
+                </li>
+                <li>
+                    <a href="colaborador.html">
+                        <button><i class='bx bxs-user-account'></i>Colaborador</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="configuracoes.html">
+                        <button><i class='bx bx-detail' ></i>Configurações</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sair">
+            <button><i class='bx bx-chevron-left-circle'></i></i>Sair</button>
+        </div>
+    </div> 
+
+    <div class="bg-forn">
+        <div class="forn-popup">
+            <header>
+                <h3>Registrar</h3>
+                <i class="bx bx-x" id="sairforn"></i>
+            </header>
+            <div class="popup-container">
+                <div class="cnpj">
+                    <label for="">CNPJ</label>
+                    <input type="text">
+                </div>
+                <div class="empre">
+                    <label for="">Empresa</label>
+                    <input type="text">
+                </div>
+                <div class="dtreg">
+                    <label for="">Data Reg</label>
+                    <input type="date">
+                </div>
+            </div>
+            <div class="btn-forn">
+                <button>Cancelar</button>
+                <button>Salvar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="containerfornecedor">
+        <div class="tforne">
+            <div class="fornecedor">
+                <h1>Fornecedor</h1>
+            </div>
+        </div>
+        <div class="conteudo">
+            <div class="pesquisar">
+                <div class="inppsq">
+                    <label form="pesq">PESQUISA:</label>
+                    <input type="text" placeholder="Digite algo">
+                </div>
+                <div class="tb">
+                    <button>Cadastrar</button>
+                </div>
+            </div>
+            <div class="dados">
+                <table>
+                    <thead>
+                        <th>CNPJ</th>
+                        <th>EMPRESA</th>
+                        <th>DATA REG</th>
+                        <th>AÇÃO</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>22.200.303/0001-90</td>
+                            <td>CASA AMARELA COMÉRCIO LTDA</td>
+                            <td>11/08/2022</td>
+                            <td><button class="editar">EDITAR</button><button class="excluir">EXCLUIR</button></td>
+                        </tr>
+                        <tr>
+                            <td>22.200.303/0001-90</td>
+                            <td>CASA AMARELA COMÉRCIO LTDA</td>
+                            <td>11/08/2022</td>
+                            <td><button class="editar">EDITAR</button><button class="excluir">EXCLUIR</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>  
+    <script src="/javascript/script.js"></script>
+</body>
+</html>

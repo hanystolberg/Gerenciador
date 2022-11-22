@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../_styles/caixa.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/_styles/styles.css">
+    <title>Caixa</title>
+</head>
+<body>
+    <div class="pesquisa">
+        <div class="logo">
+            <button></button>
+            <span>Nome do Usuario</span>
+        </div>
+        <div class="barrapesquisa">
+            <ul>
+                <li>
+                    <a href="../index.html">
+                        <button><i class='bx bxs-dashboard'></i>Dashboard</button>
+                    </a>
+                </li>
+                <li>
+                    <button><i class='bx bx-exit bx-rotate-90'></i>Caixa</button>
+                </li>
+                <li>
+                    <a href="fornecedor.html">
+                        <button><i class='bx bxs-user-account'></i>Fornecedor</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="colaborador.html">
+                        <button><i class='bx bxs-user-account'></i>Colaborador</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="configuracoes.html">
+                        <button><i class='bx bx-detail' ></i>Configurações</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sair">
+            <button><i class='bx bx-chevron-left-circle'></i>Sair</button>
+        </div>
+    </div>
+
+    <div class="bg-popup">
+        <div class="win-popup">
+            <header>
+                <h3>Registrar</h3>
+                <i class="bx bx-x" id="sair"></i>
+            </header>
+            <div class="popup-container">
+                <div class="dat">
+                    <label for="">Data</label>
+                    <input type="date">
+                </div>
+                <div class="desc">
+                    <label for="">Descrição</label>
+                    <input type="text">
+                </div>
+                <div class="valorc">
+                    <label for="">Valor</label>
+                    <input type="text">
+                </div>
+                <div class="movc">
+                    <label for="">Movimento</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="btn-group">
+                <button>Cancelar</button>
+                <button>Salvar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="containercaixa">
+        <div class="caixa">
+            <h1>Caixa</h1>
+        </div>
+        <div class="conteudocaixa">
+            <div class="filtro">
+                <div class="inputdate">
+                    <input type="date" >
+                </div>
+                <div class="registrarcaixa">
+                    <label for=""></label>
+                    <button>Registrar</button>
+                </div>
+            </div>
+            <div class="dados">
+                <table>
+                    <thead>
+                        <th>DATA</th>
+                        <th>DESCRÇÃO</th>
+                        <th>VALOR</th>
+                        <th>MOVIMENTO</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>11/08/2022</td>
+                            <td>22.200.303/0001-90 - CASA AMARELA COMÉRCIO LTDA</td>
+                            <td>6.632,90</td>
+                            <td><button class="saida">SAÍDA</button></td>
+                        </tr>
+                        <tr>
+                            <td>12/08/2022</td>
+                            <td>06.710.613/0008-75 - RUFINO COM (BARATÃO DA CARNE)</td>
+                            <td>143,32</td>
+                            <td><button class="saida">SAÍDA</button></td>
+                        </tr>
+                        <tr>
+                            <td>12/08/2022</td>
+                            <td>EDILSON FONSECA COSTA</td>
+                            <td>1.209,25</td>
+                            <td><button class="funcionario">COLABORADOR</button></td>
+                        </tr>
+                        <tr>
+                            <td>12/08/2022</td>
+                            <td>ENTRADA DE RECURSOS</td>
+                            <td>16.359,34</td>
+                            <td><button class="entrada">ENTRADA</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="/javascript/script.js"></script>
+</body>
+</html>

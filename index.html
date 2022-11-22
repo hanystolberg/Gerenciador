@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_styles/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Planilha</title>
+</head>
+<body>
+    <div class="pesquisa">
+        <div class="logo">
+            <button></button>
+            <span>Nome do Usuario</span>
+        </div>
+        <div class="barrapesquisa">
+            <ul>
+                <li>
+                    <button><i class='bx bxs-dashboard'></i>Dashboard</button>
+                </li>
+                <li>
+                    <a href="./_pages/caixa.html">
+                        <button><i class='bx bx-exit bx-rotate-90'></i>Caixa</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="./_pages/fornecedor.html">
+                        <button><i class='bx bxs-user-account'></i>Fornecedor</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="./_pages/colaborador.html">
+                        <button><i class='bx bxs-user-account'></i>Colaborador</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="./_pages/configuracoes.html">
+                        <button><i class='bx bx-detail' ></i>Configurações</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sair">
+            <button><i class='bx bx-chevron-left-circle'></i></i>Sair</button>
+        </div>
+    </div>
+
+    <div class="bg-dash">
+        <div class="dash-popup">
+            <header>
+                <h3>Registrar</h3>
+                <i class="bx bx-x" id="sairdash"></i>
+            </header>
+            <div class="popup-container">
+                <div class="nmcompleto">
+                    <label for="">Nome completo</label>
+                    <input type="text">
+                </div>
+                <div class="tlf">
+                    <label for="">Telefone</label>
+                    <input type="text">
+                </div>
+                <div class="fnc">
+                    <label for="">Função</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="btn-dash">
+                <button>Cancelar</button>
+                <button>Salvar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="detalhes">
+            <div class="receita">
+                <span>Valor total líquido</span>
+                <p>R$ 47.851.02</p>
+                <button class="btndt">Detalhes</button>
+                
+            </div>
+            <div class="movimento">
+                <div class="alinrecente">
+                    <div class="recentes">
+                        <h2>Recentes</h2>
+                    </div>
+                    <div class="dt">
+                        <span>Detalhes ></span>
+                    </div>
+                </div>
+                <div class="lista">
+                    <ul>
+                        <li><div class="vermelho"><i class='bx bx-money'></i>MM</div><span>R$ 150,00</span></li>
+                        <li><div class="verde"><i class='bx bx-money'></i>AMMAC </div><span>R$ 650,00</span></li>
+                        <li><div class="verde"><i class='bx bx-money'></i>MERCO</div><span>R$ 800,00</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="conteudo">
+            <div class="orcamento">
+                <div class="lucro">
+                    <div class="entradaderecurso">
+                        <h2>ENTRADA</h2>
+                            <p><i class='bx bx-log-in-circle bx-rotate-90' style='color:#05ac05'></i>R$ 16.487,23</p>
+                    </div>
+                    <div class="valorsaida">
+                        <h2>SAÍDA</h2>
+                            <p><i class='bx bx-log-out-circle bx-rotate-90' style='color:#e21313'  ></i>R$ 8.382,48</p>
+                    </div>
+                    <div class="mesanterior">
+                        <h2>MÊS ANTERIOR</h2>
+                            <p><i class='bx bx-calendar-edit' style='color:#05ac05'></i>R$ 80.010,36</p>
+                    </div>
+                </div>
+                <div class="despesas">
+                    <div class="d-ammac">
+                        <h2>Despesas - </h2>
+                            <span>01/08 - 02/08/2022</span>
+                            <p><i class='bx bxs-down-arrow-alt' style='color:#e21313'  ></i>R$ 482,23</p>
+                    </div>
+                    <div class="d-mm">
+                        <h2>Despesas - </h2>
+                        <span>01/08 - 02/08/2022</span>
+                        <p><i class='bx bxs-down-arrow-alt' style='color:#e21313'  ></i>R$ 135,43</p>
+                    </div>
+                    <div class="d-merco">
+                        <h2>Despesas - </h2>
+                        <span>01/08 - 02/08/2022</span>
+                        <p><i class='bx bxs-up-arrow-alt' style='color:#21c711'  ></i>R$ 1.010,26 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="balanco">
+                <div class="grafico">
+
+                </div>
+                <div class="colaboradores">
+                    <div class="organizando">
+                        <div class="funcionarios1">
+                            <h2>Colaboradores</h2>
+                        </div>
+                        <div class="icon">
+                            <i class='bx bx-user-plus'></i>
+                        </div>
+                    </div>
+                    <div class="semconteudo">
+                        <span>Nenhum colaborador registrado</span>
+                    </div>
+                    <div class="barralateral">
+                        <div class="alinhamento1">
+                            <div class="nome1">
+                                <button></button>
+                                <span>Leon S. kennedy</span>
+                            </div>
+                            <div class="tarefa1">
+                                <button class="faltou"></button>
+                            </div>
+                        </div>
+                        <div class="alinhamento2">
+                            <div class="nome2">
+                                <button></button>
+                                <span>Jill Valentine</span>
+                            </div>
+                            <div class="tarefa2">
+                                <button class="presente"></button>
+                            </div>
+                        </div>
+                        <div class="alinhamento3">
+                            <div class="nome3">
+                                <button></button>
+                                <span>Ada Wong</span>
+                            </div>
+                            <div class="tarefa3">
+                                <button class="ferias"></button>
+                            </div>
+                        </div>
+
+                        <div class="alinhamento3">
+                            <div class="nome3">
+                                <button></button>
+                                <span>Ada Wong</span>
+                            </div>
+                            <div class="tarefa3">
+                                <button class="ferias"></button>
+                            </div>
+                        </div>
+
+                        <div class="alinhamento3">
+                            <div class="nome3">
+                                <button></button>
+                                <span>Ada Wong</span>
+                            </div>
+                            <div class="tarefa3">
+                                <button class="ferias"></button>
+                            </div>
+                        </div>
+
+                        <div class="alinhamento2">
+                            <div class="nome2">
+                                <button></button>
+                                <span>Jill Valentine</span>
+                            </div>
+                            <div class="tarefa2">
+                                <button class="presente"></button>
+                            </div>
+                        </div>
+
+                        <div class="alinhamento2">
+                            <div class="nome2">
+                                <button></button>
+                                <span>Jill Valentine</span>
+                            </div>
+                            <div class="tarefa2">
+                                <button class="presente"></button>
+                            </div>
+                        </div><div class="alinhamento2">
+                            <div class="nome2">
+                                <button></button>
+                                <span>Jill Valentine</span>
+                            </div>
+                            <div class="tarefa2">
+                                <button class="presente"></button>
+                            </div>
+                        </div>
+                        <div class="alinhamento2">
+                            <div class="nome2">
+                                <button></button>
+                                <span>Jill Valentine</span>
+                            </div>
+                            <div class="tarefa2">
+                                <button class="presente"></button>
+                            </div>
+                        </div>
+                        <div class="alinhamento2">
+                            <div class="nome2">
+                                <button></button>
+                                <span>Jill Valentine</span>
+                            </div>
+                            <div class="tarefa2">
+                                <button class="presente"></button>
+                            </div>
+                        </div>
+
+
+                        <div class="alinhamento2">
+                            <div class="nome2">
+                                <button></button>
+                                <span>Jill Valentine</span>
+                            </div>
+                            <div class="tarefa2">
+                                <button class="presente"></button>
+                            </div>
+                        </div>
+                        <div class="alinhamento2">
+                            <div class="nome2">
+                                <button></button>
+                                <span>Jill Valentine</span>
+                            </div>
+                            <div class="tarefa2">
+                                <button class="presente"></button>
+                            </div>
+                        </div>
+
+                        <div class="alinhamento2">
+                            <div class="nome2">
+                                <button></button>
+                                <span>Jill Valentine</span>
+                            </div>
+                            <div class="tarefa2">
+                                <button class="presente"></button>
+                            </div>
+                        </div>
+
+                        <div class="alinhamento2">
+                            <div class="nome2">
+                                <button></button>
+                                <span>Jill Valentine</span>
+                            </div>
+                            <div class="tarefa2">
+                                <button class="presente"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="javascript/script.js"></script>
+</body>
+</html>
